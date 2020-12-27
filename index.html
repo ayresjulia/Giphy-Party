@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Giphy Party!</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
+	</head>
+
+	<body style="font-family: 'Lato', sans-serif">
+		<div class="container">
+			<div class="row col-6">
+				<img class="rounded-pill img-fluid w-25 float-right" src="/logo.gif" />
+			</div>
+		</div>
+
+		<div class="container text-center">
+			<h1 class="bg-dark text-white rounded p-2 mt-2">Giphy Party!</h1>
+			<hr />
+			<form class="form-inline align-items-center justify-content-center col-12 bg-light rounded">
+				<div class="form-group p-2">
+					<label for="searchInput" class="sr-only">Find your GIF</label>
+					<input type="text" class="form-control" id="searchInput" placeholder="Find your GIF" />
+				</div>
+				<button type="submit" class="btn btn-outline-dark mx-2">Search!</button>
+				<button id="remove" type="submit" class="btn btn-outline-dark">Remove All</button>
+			</form>
+			<hr />
+			<div id="imagesContainer" class="row"></div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
